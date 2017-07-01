@@ -17,6 +17,8 @@ var bookController = require('./app/controller/book.js')
 
 var Book = require('./app/model/book.js')
 
+
+
 router.get('/', function(req, res) {
 	res.json({message: 'Welcome to our Bookstore.' }) 
 });
@@ -36,3 +38,4 @@ app.use('/',router)
 app.listen(port);
 console.log('Magic happens on port ' + port);
 
+module.exports = app
